@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const data = { username: 'example' };
+
+    fetch('https://example.com/profile', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then( response => response.json())
+    .then( (data) => {
+        console.log(data);
+    })
+    .catch( (error) => {
+        console.error(error)
+    });
+
+
+</script>
+</body>
+</html>
