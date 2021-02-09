@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app-3">
+    <span v-if="seen">Thoắt ẩn thoắt hiện</span>
+</div>
+
+<!-- bản production, được tối ưu về dung lượng và tốc độ -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+    var app3 = new Vue({
+        el: '#app-3',
+        data: {
+            seen: true
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    {{ message }}
+</div>
+
+
+<!-- bản production, được tối ưu về dung lượng và tốc độ -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Do you wanna build a Vue app?'
+        }
+    })
+</script>
+
+</body>
+</html>
